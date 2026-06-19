@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>中国历史地理信息平台智能体高保真原型</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="fit-stage">
+      <section class="prototype" aria-label="中国历史地理信息平台智能体高保真原型">
+        <div class="browser-bar">
+          <div class="round-icon">▣</div>
+          <div class="tab-title">历史地理 agent⌄</div>
+          <div class="nav-pill">‹</div>
+          <div class="nav-pill muted">›</div>
+          <div class="star">☆</div>
+          <div class="green-g">G</div>
+          <div class="address">timespace-china.fudan.edu.cn</div>
+          <div class="browser-actions">⇩ ◴ ⚙︎ ⇧ ＋ ▣</div>
+        </div>
+
+        <div class="site-tabs">
+          <div>▰ 早期中华文明大模型　Powered by SAIS</div>
+          <div>环境演变与中华文明的形成</div>
+          <div>中国历史地理信息平台</div>
+          <div class="history-tab">▰ 历史记录</div>
+        </div>
+
+        <div class="main-shell">
+          <section class="map-app">
+            <header class="platform-header">
+              <div class="platform-wordmark" aria-label="中国历史地理信息平台"></div>
+              <nav>
+                <span>⌂ 首页</span>
+                <span>◧ CHGIS</span>
+                <span>▧ 古旧地图</span>
+                <span class="active">⌘ 时空框架</span>
+              </nav>
+            </header>
+            <div class="gold-line"></div>
+
+            <section class="map-body">
+              <aside class="resource-panel">
+                <div class="toolbar-row">
+                  <span class="active">☰ 资源目录</span>
+                  <i></i>
+                  <span>▦ 显示控制</span>
+                  <i></i>
+                  <span>▥ 模型分析</span>
+                </div>
+                <div class="search-row">
+                  <input placeholder="请输入关键字" />
+                  <button>⌕</button>
+                  <button class="download">↓ 下载</button>
+                </div>
+                <div class="tree-list">
+                  <div class="tree-node open">⊟ 全国配准地图索引</div>
+                  <div class="tree-node child">⊞ 中国大陆两万五千分之一地图集成(省级索引)</div>
+                  <div class="tree-node child">⊞ 中国大陆五万分之一地图集成(省级索引)</div>
+                  <div class="tree-node child">⊞ 中国大陆五万分之一地图集成(省内索引)</div>
+                  <div class="tree-node child">⊞ 民国时期五万分一分省地图集(汉珍数位)</div>
+                  <div class="tree-node child indent">□ 美国陆军制图局L500系列中国大陆部分</div>
+                  <div class="tree-node child">⊞ 美国陆军制图局L500系列中国大陆部分(分省)</div>
+                  <div class="tree-node">⊞ □ 上海近代地图</div>
+                  <div class="tree-node">⊞ □ 1997年中国1比100万地图</div>
+                  <div class="tree-node">⊞ □ 中国行政区划沿革数据库1912-2013</div>
+                  <div class="tree-node">⊞ □ 西北边疆地理信息数据库</div>
+                  <div class="tree-node">⊞ □ CHGIS_V6数据</div>
+                  <div class="tree-node add">⊞ □ 自定义图层 <b>＋</b></div>
+                  <div class="tree-node open">⊟ 古旧地图</div>
+                  <div class="tree-node child">⊞ 中国大陆两万五千分之一地图集成</div>
+                  <div class="tree-node child">⊞ 中国大陆五万分之一地图集成</div>
+                  <div class="tree-node child">⊞ 民国时期五万分一分省地图集(汉珍数位)</div>
+                  <div class="tree-node child">⊞ 美国陆军制图局L500系列中国大陆部分</div>
+                  <div class="tree-node child">⊞ 民国各省政区图</div>
+                  <div class="tree-node child">⊞ 全国三十万分之一</div>
+                </div>
+              </aside>
+
+              <div class="map-area">
+                <div class="floating-tools">
+                  <button class="selected">标注</button>
+                  <button>⊕ 经纬网</button>
+                  <button>◉ 全国</button>
+                  <button>▧ 截图</button>
+                  <button>▣ 打印</button>
+                  <button class="query">▰ 更多查询</button>
+                  <button class="dots">⋮</button>
+                </div>
+                <div class="map-label province-a">黑龙江省</div>
+                <div class="map-label province-b">吉林省</div>
+                <div class="map-label province-c">辽宁省</div>
+                <div class="map-label beijing">北京★</div>
+                <div class="map-controls">
+                  <button>＋</button>
+                  <button>－</button>
+                  <button>▣</button>
+                  <button>⛶</button>
+                  <button>◎</button>
+                </div>
+                <div class="seal-button">篆</div>
+              </div>
+            </section>
+            <div class="login-overlay" id="loginOverlay" aria-hidden="true">
+              <div class="login-modal" role="dialog" aria-modal="true" aria-label="CHGIS 登录">
+                <button class="login-close" id="loginClose" aria-label="关闭登录框">×</button>
+                <label class="login-field user-field">
+                  <span>♙</span>
+                  <input id="loginUser" placeholder="用户名" />
+                </label>
+                <label class="login-field password-field">
+                  <span>▢</span>
+                  <input id="loginPassword" type="password" placeholder="密码" />
+                  <b>⌁</b>
+                </label>
+                <button class="login-submit" id="loginSubmit">登录</button>
+                <div class="login-links">
+                  <button>手机号登录</button>
+                  <span></span>
+                  <button>立即注册</button>
+                  <button>忘记密码</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="agent-card">
+            <div class="agent-title">
+              <div><span>›</span>历史地理智能体</div>
+              <button class="login-toggle" id="loginToggle" aria-pressed="false">登录 CHGIS</button>
+            </div>
+            <div class="calligraphy" aria-label="解码千年文明 智启未来传承"></div>
+            <div class="chat-reply" id="chatReply" aria-live="polite"></div>
+            <div class="chat-box" id="chatBox">
+              <textarea id="agentInput" placeholder="有问题尽管问我"></textarea>
+              <button id="sendAgent" aria-label="发送问题">▷</button>
+            </div>
+            <div class="prompt-list">
+              <button data-question="秦代的丹徒县是今天的哪个地方？">秦代的丹徒县是今天的哪个地方？</button>
+              <button data-question="西汉太初二年，全国有多少个县？">西汉太初二年，全国有多少个县？</button>
+              <button data-question="请展示民国时期浙江省海盐县的地形图？">请展示民国时期浙江省海盐县的地形图？</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <script src="./scale.js"></script>
+    <script src="./agent.js"></script>
+  </body>
+</html>
